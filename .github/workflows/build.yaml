@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - development  # Change this to your main branch name
+      - main  # Change this to your main branch name
 
 jobs:
   build:
@@ -17,6 +17,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Run Trivy vulnerability scanner in fs mode
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          trivy-config: trivy.yaml
 
       - name: Build
         run: |

@@ -1,0 +1,7 @@
+name: DAST
+
+on:
+  push:
+    branches:
+      - main
+
