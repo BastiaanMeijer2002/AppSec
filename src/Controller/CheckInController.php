@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Controller;
+namespace App\Controller;
 
-use src\Entity\Invoice;
-use src\Entity\InvoiceLine;
-use src\Repository\InvoiceRepository;
-use src\Repository\UserRepository;
+use App\Entity\Invoice;
+use App\Entity\InvoiceLine;
+use App\Repository\InvoiceRepository;
+use App\Repository\UserRepository;
 use DateTime;
 use Doctrine\Persistence\ManagerRegistry;
 use phpDocumentor\Reflection\Types\This;
