@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use src\Entity\Invoice;
-use src\Entity\Membership;
-use src\Repository\InvoiceRepository;
+use App\Entity\Invoice;
+use App\Entity\Membership;
+use App\Repository\InvoiceRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use phpDocumentor\Reflection\Types\This;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

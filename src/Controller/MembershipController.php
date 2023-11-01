@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use src\Entity\Membership;
-use src\Entity\User;
+use App\Entity\Membership;
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

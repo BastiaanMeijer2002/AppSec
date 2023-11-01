@@ -3,13 +3,13 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use src\Repository\MembershipRepository;
+use App\Repository\MembershipRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use src\Entity\Invoice;
-use src\Entity\User;
+use App\Entity\Invoice;
+use App\Entity\User;
 
 #[ORM\Entity(repositoryClass: MembershipRepository::class)]
 class Membership

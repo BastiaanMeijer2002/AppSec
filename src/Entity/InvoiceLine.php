@@ -3,8 +3,8 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use src\Entity\Invoice;
-use src\Repository\InvoiceLineRepository;
+use App\Entity\Invoice;
+use App\Repository\InvoiceLineRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: InvoiceLineRepository::class)]

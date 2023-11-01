@@ -3,10 +3,10 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use src\Repository\UserRepository;
+use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
-use src\Entity\Membership;
+use App\Entity\Membership;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]

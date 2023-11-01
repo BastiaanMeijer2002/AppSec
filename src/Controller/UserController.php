@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use src\Entity\User;
+use App\Entity\User;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

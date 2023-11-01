@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use src\Entity\Invoice;
-use src\Entity\InvoiceLine;
+use App\Entity\Invoice;
+use App\Entity\InvoiceLine;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
