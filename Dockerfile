@@ -13,7 +13,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN composer install
 
 RUN php bin/console doctrine:database:create
-RUN php bin/console doctrine:migrations:migrate
+RUN php bin/console doctrine:migrations:migrate 20230104012755
 
 EXPOSE 8000
 CMD php -S 0.0.0.0:8000 -t public
