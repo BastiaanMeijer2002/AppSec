@@ -20,11 +20,11 @@
         "symfony/dotenv": "6.2.*",
         "symfony/expression-language": "6.2.*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "v6.2.0",
+        "symfony/framework-bundle": "6.2.*",
         "symfony/property-access": "6.2.*",
         "symfony/property-info": "6.2.*",
         "symfony/runtime": "6.2.*",
-        "symfony/security-bundle": "v2.6.0",
+        "symfony/security-bundle": "6.2.*",
         "symfony/serializer": "6.2.*",
         "symfony/twig-bundle": "6.2.*",
         "symfony/validator": "6.2.*",
@@ -69,7 +69,7 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "6.1.0"
+        "symfony/symfony": "*"
     },
     "extra": {
         "symfony": {
