@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - development  # Change this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      docker:
+        image: docker:latest
+        options: --privileged
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          docker-compose up -d
+          # You might need to add more commands like testing, etc.
